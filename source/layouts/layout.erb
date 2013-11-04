@@ -7,13 +7,38 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
+    <title><%= current_page.data.title || "Daemon Consulting" %></title>
     
-    <%= stylesheet_link_tag "normalize", "all" %>
+    <%= stylesheet_link_tag "normalize", "all" , "style"  %>
     <%= javascript_include_tag  "all" %>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
   </head>
   
   <body class="<%= page_classes %>">
+    <div class="navigation">
+      <span class="logo"><a href="/"><img src="../images/dc_logo_squares.png" title="Daemon Consulting"></a>
+        <ul class="navigation pull-right">
+            <li>
+                <%= link_to "home", "../index.html" %>
+            </li>
+            <li>
+                <%= link_to "approach", "/approach/" %>
+            </li>
+            <li>
+                <%= link_to "about", "/about/" %>
+            </li>
+            <li>
+                <%= link_to "contact", "/contact/" %>
+            </li>
+            <li>
+                <%= link_to "blog", "/blog/" %>
+            </li>
+        </ul>
+    </div>
     <%= yield %>
+
+    <footer>
+      <span class="logo-bold">daemon</span><span class="poweredby">consulting is powered by</span> <img src="../images/bullfrog-logo.png">
+    </footer>
   </body>
 </html>

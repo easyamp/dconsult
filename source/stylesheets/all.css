@@ -1,38 +1,13 @@
 @charset "utf-8";
 
 body {
-  background: #d4d4d4 url("../images/background.png");
-  text-align: center;
-  font-family: sans-serif; }
+ font-family: 'Lato', sans-serif;
+}
 
-h1 {
-  color: rgba(0, 0, 0, .3);
-  font-weight: bold;
-  font-size: 32px;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
-  background: url("../images/middleman.png") no-repeat center 100px;
-  padding: 350px 0 10px;
-  margin: 0; }
+.home {
+  margin: 2% auto;
 
-.doc {
-  font-size: 14px;
-  margin: 0; }
-  .doc:before,
-  .doc:after {
-    opacity: .2;
-    padding: 6px;
-    font-style: normal;
-    position: relative;
-    content: "•"; }
-  .doc a {
-    color: rgba(0, 0, 0, 0.3); }
-    .doc a:hover {
-      color: #666; }
-
-.welcome {
-  -webkit-animation-name: welcome;
+/*  -webkit-animation-name: welcome;
   -webkit-animation-duration: .9s; }
 
 @-webkit-keyframes welcome {
@@ -51,5 +26,211 @@ h1 {
   }
   to {
     -webkit-transform: scale(1);
-  }
+  }*/
 }
+
+
+.navigation {
+  margin: 1%;
+}
+
+.pull-right {
+  float: right;
+  list-style-type: none;
+  /*margin-right: 5%;*/
+  margin-top: 0;
+  display: inline;
+  /*width: 70%;*/
+  min-width: 300px;
+}
+
+.pull-right li {
+  display: inline;
+  padding-right: 2%;
+}
+
+.logo img{
+  width: 280px;
+}
+
+a { text-decoration: none; color: black; font-weight: 700; margin-right:2%;}
+a:hover { color: white; }
+
+footer {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  float: right;
+  color: white;
+  font-size: 1.3vw;
+  font-weight: 400;
+}
+
+footer .logo-bold {
+  font-weight: 700;
+  position: relative;
+  bottom: 27px;
+}
+
+footer .poweredby {
+  font-weight: 400;
+  position: relative;
+  bottom: 27px;
+}
+
+footer img {
+  width: 120px;
+}
+
+
+.index {
+  background-color: #34ab00;
+  color: white;
+  margin: 2% auto;
+}
+
+.subhead {
+  font-size: 5vw; 
+  width: 80%;
+  margin: 0 auto 8%;
+}
+
+.subhead .quotedby{
+  font-size: 2vw;
+  font-weight: 400;
+}
+
+.icon-lightbulb { font-size: 11vw; float: right; }
+
+.emphasis {
+  font-weight: 700;
+}
+
+.how { float: right; }
+
+.home-body {
+  padding-top: 8%;
+  border-top: 1px solid white;
+  font-size: 2.5vw;
+  line-height: 3.25vw;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.approach {
+  background-color: #ffde00;
+  color: black;
+  margin: 2% auto;
+}
+
+.approach-subhead {
+  font-size: 5vw;
+  margin-left: 5%;
+  width: 80%;
+}
+
+.approach ol {
+  font-size: 2vw;
+  line-height: 3.5vw;
+  margin-left: 5%;
+}
+
+.icon-bullseye {
+  float: right;
+  margin-right: 35%;
+  font-size: 12vw;
+}
+
+.about {
+  background-color: #1b49be;
+  color: white;
+  margin: 2% auto;
+}
+
+.supporting {
+  font-size: 4vw;
+  margin-left: 12%;
+}
+
+.twenty-years {
+  font-size: 4vw;
+  float: right;
+  margin-right: 12%;
+}
+
+.helping {
+  margin-top: 7%;
+  margin-left: 12%;
+  font-size: 2vw;
+  line-height: 3.5vw;
+}
+
+.contact {
+  background-color: #eb0000;
+  color: white;
+  margin: 2% auto;
+}
+
+.contact-subhead {
+  float: right;
+  margin-right: 8%;
+  background-image: url("../images/comment-bubble.png");
+  background-repeat: none;
+  height: 400px;
+  color: black;
+  width: 400px;
+}
+
+.contact-body {
+  margin-left: 12%;
+  margin-top: 20%;
+  font-size: 2.25vw;
+}
+
+.contact-body span {
+  color: black;
+  font-size: 3vw;
+  margin-right: 2%;
+}
+
+.contact-body a {
+  color: white;
+  font-weight: 400;
+}
+
+.hello {
+  font-size: 2.75vw;
+  width: 88%;
+  margin-top: 12%;
+  margin-left: 12%;
+}
+
+.hello-header {
+  font-size: 4.5vw;
+}
+
+
+.blog {
+  margin: 2% auto;
+}
+
+/*.icon-chat {
+  z-index: -10;
+  font-size: 25vw;
+  float: right;
+}*/
+
+
+
+
+/*  .doc:before,*/
+/*  .doc:after {
+    opacity: .2;
+    padding: 6px;
+    font-style: normal;
+    position: relative;
+    content: "•"; }*/
+/*  .doc a {
+    color: rgba(0, 0, 0, 0.3); }
+    .doc a:hover {
+      color: #666; }*/
